@@ -1,12 +1,12 @@
 piipeline {
  agent any
  stages {
- stage('Build'){
- steps{
+ stage ('Build') {
+ steps {
  
  echo 'Running Build automation'
  sh './gradlew build --no-daemon'
- archiveArtifacts artifacts: 'dist/trainschedule.zip'
+ archiveArtifacts artifacts: 'dist/trainSchedule.zip'
 }
 }
 }
